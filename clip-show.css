@@ -1,0 +1,48 @@
+*{
+	margin: 0;
+	padding:0;
+	color: #fff;
+}
+
+.yellow{
+	width: 100%;
+	height: 500px;
+	background: red;
+}
+
+
+.yellow::after{
+	content: '';
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	background-color: red;
+	transform: rotate(45deg);
+	top: 450px;
+	left: 45%;
+	z-index: 120;
+}
+
+h2{
+	position: relative;
+	text-align: center;
+	top: 230px;
+}
+
+.red{
+	width: 100%;
+	height: 500px;
+	background: black;
+	clip-path: polygon(0 0 , 100% 0 , 100% 85% , 0 100%);
+}
+
+.green{
+	width: 100%;
+	height: calc(500px + 500px*28/100);
+	background: blue;
+	margin-top: -28%;
+}
+
+.green h2{
+	top: calc(500px*28/100 + 230px);
+}
